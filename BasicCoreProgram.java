@@ -1,24 +1,24 @@
 package com.bridgelabz.basiccoreProblem;
-import java.util.Scanner;
+
 
 public class BasicCoreProgram {
-public static void main(String[] args) {
-	int year;
-	System.out.println("Welcome To Java Were We Learn Something Diffrent");
-int Year;
-	System.out.println(" Enter year:");
-	Scanner sc = new Scanner(System.in);
-	year = sc.nextInt();
-	//if (year > 999 && year < 9999);
-	if ((year % 4 == 0 && year / 100 != 0) || year % 100 == 0 && year % 400 == 0) {
-		System.out.println("Leap Year");
+	public static void main(String[] args) {
+      System.out.println("Welcome To java Were We Learn Something Diffrent");
+		int num, mul = 1;
+
+		num = Integer.parseInt(args[0]);
+
+		if (num > 31) {
+			System.out.println("Value of be less than 31");
+
+		}
+
+		else {
+			System.out.println(mul);
+			for (int j = 1; j <= num; j++) {
+				mul = mul * 2;
+				System.out.println(mul);
+			}
+		}
 	}
-	else {
-		System.out.println("not leap Year");
-	}
-	
 }
-
-
-}
-
