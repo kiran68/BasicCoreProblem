@@ -1,24 +1,18 @@
 package com.bridgelabz.basiccoreProblem;
-
-
+import java.util.Scanner;
 public class BasicCoreProgram {
 	public static void main(String[] args) {
-      System.out.println("Welcome To java Were We Learn Something Diffrent");
-		int num, mul = 1;
-
-		num = Integer.parseInt(args[0]);
-
-		if (num > 31) {
-			System.out.println("Value of be less than 31");
-
+		System.out.println("Welcome To java Were We Learn Something Diffrent");
+		
+		double n,i;
+		double sum=0;
+		Scanner sc=new Scanner(System.in);
+		System.out.println("Enter a number");
+		n=sc.nextDouble();
+		for( i=1;i<=n;i++)
+		{
+			sum=sum+(1/i);
 		}
-
-		else {
-			System.out.println(mul);
-			for (int j = 1; j <= num; j++) {
-				mul = mul * 2;
-				System.out.println(mul);
-			}
-		}
+		System.out.println("Harmonic value = "+sum);
 	}
 }
